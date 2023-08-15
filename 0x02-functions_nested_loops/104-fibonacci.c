@@ -7,30 +7,30 @@
  */
 int main(void)
 {
-	unsigned long int i; unsigned long int before = 1; unsigned long int after = 2; unsigned long int l = 1000000000; unsigned long int before1; unsigned long int before2; unsigned long int after1; unsigned long int after2;
+	unsigned long int i; unsigned long int be = 1; unsigned long int af = 2; unsigned long int l = 1000000000; unsigned long int be1; unsigned long int be2; unsigned long int af1; unsigned long int af2;
 
-	printf("%lu", before);
+	printf("%lu", be);
 
 	for (i = 1; i < 91; i++)
 	{
-		printf(", %lu", after);
-		after += before;
-		before = after - before;
+		printf(", %lu", af);
+		af += be;
+		be = af - be;
 	}
 
-	before1 = (before / l);
-	before2 = (before % l);
-	after1 = (after / l);
-	after2 = (after % l);
+	be1 = (be / l);
+	be2 = (be % l);
+	af1 = (af / l);
+	af2 = (af % l);
 
 	for (i = 92; i < 99; ++i)
 	{
-		printf(", %lu", after1 + (after2 / l));
-		printf("%lu", after2 % l);
-		after1 = after1 + before1;
-		before1 = after1 - before1;
-		after2 = after2 + before2;
-		before2 = after2 - before2;
+		printf(", %lu", af1 + (af2 / l));
+		printf("%lu", af2 % l);
+		af1 = af1 + be1;
+		be1 = af1 - be1;
+		af2 = af2 + be2;
+		be2 = af2 - be2;
 	}
 	printf("\n");
 	return (0);
