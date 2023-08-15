@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	unsigned long int i; before = 1; after = 2; l = 1000000000; before1; before2; after1; after2;
+	unsigned long int i; unsigned long int before = 1; unsigned long int after = 2; unsigned long int l = 1000000000; unsigned long int before1; unsigned long int before2; unsigned long int after1; unsigned long int after2;
 
 	printf("%lu", before);
 
