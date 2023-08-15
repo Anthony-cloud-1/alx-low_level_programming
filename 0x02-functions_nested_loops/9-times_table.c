@@ -5,30 +5,29 @@
  */
 void times_table(void)
 {
-    int row, column, result;
+	int row, column, result;
 
-    for (row = 0; row <= 9; row++)
-    {
-        _putchar('0');  /* Print the leftmost '0' character */
-        
-        for (column = 1; column <= 9; column++)
-        {
-            _putchar(',');  /* Print the comma separator */
-            _putchar(' ');  /* Print the space separator */
+	for (row = 0; row <= 9; row++)
+	{
+	_putchar('0');	/* Print the leftmost '0' character */
 
-            result = row * column;
-            
-            /* Print tens digit if not zero */
-            if (result < 10)
-                _putchar(' ');
-            else
-                _putchar(result / 10 + '0');
+	for (column = 1; column <= 9; column++)
+	{
+		_putchar(',');	/* Print the comma separator */
+		_putchar(' ');	/* Print the space separator */
 
-            /* Print ones digit */
-            _putchar(result % 10 + '0');
-        }
+		result = row * column;
 
-        _putchar('\n'); 
-    }
+		/* Print tens digit if not zero */
+		if (result < 10)
+		_putchar(' ');
+		else
+		_putchar(result / 10 + '0');
+
+		/* Print ones digit */
+		_putchar(result % 10 + '0');
+	}
+
+	_putchar('\n');	/* Move to the next line */
+	}
 }
-
