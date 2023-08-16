@@ -13,6 +13,7 @@ int main(void)
 	printf("Infinite loop incoming :(\n");
 
 	/**
+	*Commented loop
 	* i = 0;
 	*
 	*
