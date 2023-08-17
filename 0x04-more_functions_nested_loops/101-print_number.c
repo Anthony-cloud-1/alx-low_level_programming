@@ -21,7 +21,7 @@ void print_number(int n)
 		_putchar('-');
 		n = -n;
 	}
-	 while (n / divisor)
+	while (n / divisor)
 		divisor *= 10;
 
 	while (divisor > 1)
