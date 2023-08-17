@@ -15,10 +15,14 @@ void print_triangle(int size)
 	for (int row = 1; row <= size; row++)
 	{
 		for (int space = 1; space <= size - row; space++)
+		{
 			_putchar(' ');
+		}
 
 		for (int hash = 1; hash <= row; hash++)
+		{
 			_putchar('#');
+		}
 
 		_putchar('\n');
 	}
