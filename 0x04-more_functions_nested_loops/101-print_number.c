@@ -16,7 +16,7 @@ void print_number(int n)
 		n = -n;
 	}
 
-	while (n / divisor >= 10)
+	while (n / divisor > 10)
 		divisor *= 10;
 
 	while (divisor != 0)
