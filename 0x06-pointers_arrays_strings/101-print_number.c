@@ -25,6 +25,5 @@ void print_number(int n)
 		print_number(num / 10);
 	}
 	/*Extracts last digit, converts to char equivalent*/
-	
 	_putchar((num % 10) + '0');
 }
