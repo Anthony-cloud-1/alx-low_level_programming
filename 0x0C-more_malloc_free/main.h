@@ -13,6 +13,7 @@ char *create_xarray(int size);
 void get_prod(char *prod, char *mult, int digit, int zeroes);
 void add_nums(char *final_prod, char *next_prod, int next_len);
 int get_digit(char c);
+int _putchar(char c);
 
 
 #endif /* MAIN_H */
