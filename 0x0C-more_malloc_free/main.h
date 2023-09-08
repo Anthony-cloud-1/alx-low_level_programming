@@ -12,7 +12,7 @@ int find_len(char *str);
 char *create_xarray(int size);
 void get_prod(char *prod, char *mult, int digit, int zeroes);
 void add_nums(char *final_prod, char *next_prod, int next_len);
-int get_digit(char c)i;
-int is_positive_integer(const char *str);
+int get_digit(char c);
+
 
 #endif /* MAIN_H */
