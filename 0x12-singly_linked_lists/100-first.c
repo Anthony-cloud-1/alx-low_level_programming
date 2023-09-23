@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-#include "main.h"
+#include "lists.h"
 
 void first(void) __attribute__ ((constructor));
 
