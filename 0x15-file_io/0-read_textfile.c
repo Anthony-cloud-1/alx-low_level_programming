@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
 /**
@@ -11,7 +12,9 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd, bytes_read, bytes_written;
+	int fd;
+	int bytes_read;
+	int bytes_written;
 	char *buffer;
 
 	if (filename == NULL)
